@@ -896,17 +896,16 @@ main.centered-container .card h3 {
   padding-bottom: 0; /* Remove padding when collapsed */
 }
 
-.session-info-card.collapsed .material-icons {
+#toggleSessionInfoBtn .material-icons {
+  transition: transform 0.3s ease;
+}
+
+.session-info-card.collapsed #toggleSessionInfoBtn .material-icons {
   transform: rotate(180deg);
 }
 
-.session-info-card:not(.collapsed) .material-icons {
+.session-info-card:not(.collapsed) #toggleSessionInfoBtn .material-icons {
   transform: rotate(0deg);
-}
-
-/* Adjust the transition for the icon */
-.material-icons {
-  transition: transform 0.3s ease;
 }
 
 /* Adjust existing styles to accommodate new layout */
